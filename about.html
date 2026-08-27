@@ -1,0 +1,233 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+        
+    <a href="#" class="text-indigo-600">
+        <p class="font-bold leading-snug tracking-tight  mx-auto my-6 w-full text-2xl lg:max-w-3xl lg:text-4xl">Portfolio</p>
+    </a>
+
+    <ul class="md:flex hidden items-center gap-10">
+        <li><a class="hover:text-gray-500/80 transition" href="index.html">Home</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="about.html">About</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="portfolio.html">Portfolio</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="service.html">Services</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="contact.html">Contact</a></li>
+
+
+    </ul>
+
+    <button type="button" class="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
+        Get started
+    </button>
+
+    <button aria-label="menu-btn" type="button" class="menu-btn inline-block md:hidden active:scale-90 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#000">
+            <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+        </svg>
+    </button>
+
+    <div class="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6 hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-lg">
+            <li><a href="#" class="text-sm">Home</a></li>
+            <li><a href="#" class="text-sm">Services</a></li>
+            <li><a href="#" class="text-sm">Portfolio</a></li>
+            <li><a href="#" class="text-sm">Pricing</a></li>
+        </ul>
+
+        <button type="button" class="bg-white text-gray-600 border border-gray-300 mt-6 text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
+            Get started
+        </button>
+    </div>
+</nav>
+
+
+<!-- page title section  -->
+ <section class="bg-white lg:grid lg:h-100 lg:place-content-center">
+  <div class="mx-auto w-screen max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+    <div class="mx-auto max-w-prose text-center">
+      <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
+        I am 
+        <strong class="text-indigo-600"> Mokhelesur Rahman Tanzim</strong>
+        
+      </h1>
+
+      <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+        I am a expert web developer. consectetur adipisicing elit. Eaque, nisi. Natus, provident
+        accusamus impedit minima harum corporis iusto.
+      </p>
+
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- this is biography section  -->
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+<section class="flex flex-col md:flex-row items-center justify-center gap-10 max-md:px-4">
+    <div class="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
+        <img class="max-w-md w-full object-cover rounded-2xl"
+            src="images/profile.jpg"
+            alt="">
+        
+    </div>
+    <div class="text-sm text-slate-600 max-w-lg">
+        <h1 class="text-xl uppercase font-semibold text-slate-700">About me</h1>
+        <div class="w-24 h-[3px] rounded-full bg-gradient-to-r from-indigo-600 to-[#DDD9FF]"></div>
+        <p class="mt-8">I am a passionate web developer and freelancer based in Lalbagh, Dhaka. With a strong foundation in Electrical and Electronic Engineering (EEE), I bring a unique analytical perspective to my coding projects. I focus on building efficient, scalable, and AI-assisted web applications that solve real-world problems for professionals like doctors and engineers. </p>
+        <p class="mt-4">Whether you're launching a SaaS app, landing page, or dashboard, our collection of Tailwind
+            CSS components is crafted to boost your development speed and improve user experience.</p>
+        <p class="mt-4">From UI design systems to automation-ready layouts, PrebuiltUI empowers you to build
+            beautifully and scale effortlessly.</p>
+        <a href="#" class="flex items-center w-max gap-2 mt-8 hover:-translate-y-0.5 transition bg-gradient-to-r from-indigo-600 to-[#8A7DFF] py-3 px-8 rounded-full text-white">
+            <span>Read more</span>
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12.53 6.53a.75.75 0 0 0 0-1.06L7.757.697a.75.75 0 1 0-1.06 1.06L10.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06zM0 6v.75h12v-1.5H0z"
+                    fill="#fff" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<!-- this is client sectios -->
+
+        <div class="flex flex-col items-center text-gray-800 mt-20">
+    <p class="text-blue-600 font-medium mb-2">3940+ Happy Landingfolio Users</p>
+    <p class="text-4xl font-bold max-w-160 mb-[72px]">Don't just take our words</p>
+
+    <div class="flex flex-wrap items-center justify-center gap-10">
+        <div class="flex flex-col md:flex-row items-start gap-4">
+            <img class="h-60 rounded-lg" src="images/client-2.jpg" alt="userImage1">
+            <div class="flex flex-col justify-between h-60">
+                <div>
+                    <div class="flex items-center gap-1">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                    </div>
+                    <p class="max-w-[280px] text-gray-500 mt-6">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud aliquip”
+                    </p>
+                </div>
+                <p class="text-lg font-medium">Juayed Islam</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-start gap-4">
+            <img class="h-60 rounded-lg" src="images/client-3.jpg" alt="userImage2">
+            <div class="flex flex-col justify-between h-60">
+                <div>
+                    <div class="flex items-center gap-1">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z" fill="#FF532E"/>
+                        </svg>
+                    </div>
+                    <p class="max-w-[280px] text-gray-500 mt-6">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidihunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud aliquip”
+                    </p>
+                </div>
+                <p class="text-lg font-medium">Prince Mojumder</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- This is Footer  -->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+<footer class="flex flex-col items-center justify-around w-full py-16 text-sm bg-slate-50 text-gray-800/70">
+    <a href="#" class="text-indigo-600">
+        <p class="font-bold leading-snug tracking-tight mx-auto my-6 w-full text-2xl lg:max-w-3xl lg:text-4xl transition-colors duration-200 hover:text-blue-600 cursor-pointer">Portfolio</p>
+    </a>
+    
+    <!-- Minimal live clock section -->
+    <p id="live-clock" class="text-xs tracking-widest text-gray-400 uppercase"></p>
+
+    <p class="mt-4 text-center">Copyright © 2026 <a href="#">My Portfolio</a>. All rights reserved.</p>
+    <div class="flex items-center gap-4 mt-6">
+        <a href="#" class="font-medium text-gray-800 hover:text-black transition-all">
+            Know more
+        </a>
+        <div class="h-4 w-px bg-black/20"></div>
+        <a href="#" class="font-medium text-gray-800 hover:text-black transition-all">
+           Thank You
+        </a>
+    </div>
+</footer>
+
+<!-- Simple JavaScript to run the live clock -->
+<script>
+    function updateClock() {
+        const now = new Date();
+        // Outputs a clean format like: "Aug 8, 2026, 3:13 PM"
+        const options = { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+        document.getElementById('live-clock').innerText = now.toLocaleString('en-US', options);
+    }
+    setInterval(updateClock, 1000);
+    updateClock(); // Run instantly on load
+</script>
+
+
+<script>
+    const menuButtons = document.querySelectorAll('.menu-btn');
+    const mobileMenus = document.querySelectorAll('.mobile-menu');
+
+    menuButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            mobileMenus[index].classList.toggle('hidden');
+        });
+    });
+
+</script>
+
+</body>
+</html>

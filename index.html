@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>.carousel-item { display: none; }
+        .carousel-item.active { display: block; }</style>
+</head>
+<body>
+    <nav class="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-white text-gray-700 shadow-[0px_4px_25px_0px_#0000000D] transition-all">
+        
+    <a href="#" class="text-indigo-600">
+        <p class="font-bold leading-snug tracking-tight  mx-auto my-6 w-full text-2xl lg:max-w-3xl lg:text-4xl">Portfolio</p>
+    </a>
+
+    <ul class="md:flex hidden items-center gap-10">
+        <li><a class="hover:text-gray-500/80 transition" href="index.html">Home</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="about.html">About</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="portfolio.html">Portfolio</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="service.html">Services</a></li>
+        <li><a class="hover:text-gray-500/80 transition" href="contact.html">Contact</a></li>
+
+
+    </ul>
+
+    <button type="button" class="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
+        Get started
+    </button>
+
+    <button aria-label="menu-btn" type="button" class="menu-btn inline-block md:hidden active:scale-90 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="#000">
+            <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+        </svg>
+    </button>
+
+    <div class="mobile-menu absolute top-[70px] left-0 w-full bg-white p-6 hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-lg">
+            <li><a href="#" class="text-sm">Home</a></li>
+            <li><a href="#" class="text-sm">Services</a></li>
+            <li><a href="#" class="text-sm">Portfolio</a></li>
+            <li><a href="#" class="text-sm">Pricing</a></li>
+        </ul>
+
+        <button type="button" class="bg-white text-gray-600 border border-gray-300 mt-6 text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
+            Get started
+        </button>
+    </div>
+</nav>
+
+<!-- This is carosel section  -->
+  <section class="relative h-[400px] overflow-hidden bg-blue-900 text-white">
+            <div id="carousel">
+                <div class="carousel-item active p-20 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/banner1.jpg'); height: 400px;">
+                    <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+                    <p class="text-xl">Building AI-Assisted Complex Web Projects</p>
+                </div>
+                <div class="carousel-item p-20 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/banner2.jpg'); height: 400px;">
+                    <h1 class="text-5xl font-bold mb-4">EEE Background Specialist</h1>
+                    <p class="text-xl">Combining Engineering Logic with Web Development</p>
+                </div>
+                <div class="carousel-item p-20 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/banner3.jpg'); height: 400px;">
+                    <h1 class="text-5xl font-bold mb-4">Freelance Expert</h1>
+                    <p class="text-xl">Serving Doctors, Engineers, and Professionals Worldwide</p>
+                </div>
+               
+            </div>
+            <button onclick="prevSlide()" class="absolute left-5 top-1/2 bg-black/30 p-2 rounded-full hover:bg-black/50 transition">❮</button>
+            <button onclick="nextSlide()" class="absolute right-5 top-1/2 bg-black/30 p-2 rounded-full hover:bg-black/50 transition">❯</button>
+        </section>
+
+
+<!-- this is about section  -->
+ <div id="about" class="relative bg-white overflow-hidden mt-16">
+    <div class="max-w-7xl mx-auto">
+        <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="50,0 100,0 50,100 0,100"></polygon>
+            </svg>
+
+            <div class="pt-1"></div>
+
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                <div class="sm:text-center lg:text-left">
+                    <h2 class="my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+                        About me
+                    </h2>
+
+                    <p>
+                        Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non
+                        libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem
+                        volutpat sodales. In ornare porttitor odio sit amet laoreet. Sed laoreet, nulla a posuere
+                        ultrices, purus nulla tristique turpis, hendrerit rutrum augue quam ut est. Fusce malesuada
+                        posuere libero, vitae dapibus eros facilisis euismod. Sed sed lobortis justo, ut tincidunt
+                        velit. Mauris in maximus eros.
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img class="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="images/profile.jpg" alt="">
+    </div>
+</div>
+ <!-- this is my mission and vision  -->
+   
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">My Mission</h3>
+                    <p>To bridge the gap between engineering principles and modern web technologies, delivering efficient and intelligent digital solutions for professionals.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">My Vision</h3>
+                    <p>To become a leading AI-integrated web solution provider, helping freelancers and technical professionals automate their workflows effectively.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- our services  -->
+
+        <div class="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mt-24 px-5 mb-20">
+
+
+    <div class="flex gap-4 items-start flex-col ">
+        <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"><path d="M9.96424 2.68571C10.0668 2.42931 9.94209 2.13833 9.6857 2.03577C9.4293 1.93322 9.13832 2.05792 9.03576 2.31432L5.03576 12.3143C4.9332 12.5707 5.05791 12.8617 5.3143 12.9642C5.5707 13.0668 5.86168 12.9421 5.96424 12.6857L9.96424 2.68571ZM3.85355 5.14646C4.04882 5.34172 4.04882 5.6583 3.85355 5.85356L2.20711 7.50001L3.85355 9.14646C4.04882 9.34172 4.04882 9.6583 3.85355 9.85356C3.65829 10.0488 3.34171 10.0488 3.14645 9.85356L1.14645 7.85356C0.951184 7.6583 0.951184 7.34172 1.14645 7.14646L3.14645 5.14646C3.34171 4.9512 3.65829 4.9512 3.85355 5.14646ZM11.1464 5.14646C11.3417 4.9512 11.6583 4.9512 11.8536 5.14646L13.8536 7.14646C14.0488 7.34172 14.0488 7.6583 13.8536 7.85356L11.8536 9.85356C11.6583 10.0488 11.3417 10.0488 11.1464 9.85356C10.9512 9.6583 10.9512 9.34172 11.1464 9.14646L12.7929 7.50001L11.1464 5.85356C10.9512 5.6583 10.9512 5.34172 11.1464 5.14646Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></span>
+        <div>
+            <h3 class="font-semibold text-xl"> Web Design</h3>
+            <p class="mt-1 text-gray-500"> You don't need to be an expert to use our plugin. Our expressive API is
+                readable and well documented.</p>
+        </div>
+    </div>
+
+    <div class="flex gap-4 items-start flex-col ">
+        <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"><path d="M0.849976 1.74998C0.849976 1.25292 1.25292 0.849976 1.74998 0.849976H3.24998C3.74703 0.849976 4.14998 1.25292 4.14998 1.74998V2.04998H10.85V1.74998C10.85 1.25292 11.2529 0.849976 11.75 0.849976H13.25C13.747 0.849976 14.15 1.25292 14.15 1.74998V3.24998C14.15 3.74703 13.747 4.14998 13.25 4.14998H12.95V10.85H13.25C13.747 10.85 14.15 11.2529 14.15 11.75V13.25C14.15 13.747 13.747 14.15 13.25 14.15H11.75C11.2529 14.15 10.85 13.747 10.85 13.25V12.95H4.14998V13.25C4.14998 13.747 3.74703 14.15 3.24998 14.15H1.74998C1.25292 14.15 0.849976 13.747 0.849976 13.25V11.75C0.849976 11.2529 1.25292 10.85 1.74998 10.85H2.04998V4.14998H1.74998C1.25292 4.14998 0.849976 3.74703 0.849976 3.24998V1.74998ZM2.94998 4.14998V10.85H3.24998C3.74703 10.85 4.14998 11.2529 4.14998 11.75V12.05H10.85V11.75C10.85 11.2529 11.2529 10.85 11.75 10.85H12.05V4.14998H11.75C11.2529 4.14998 10.85 3.74703 10.85 3.24998V2.94998H4.14998V3.24998C4.14998 3.74703 3.74703 4.14998 3.24998 4.14998H2.94998ZM2.34998 1.74998H1.74998V2.34998V2.64998V3.24998H2.34998H2.64998H3.24998V2.64998V2.34998V1.74998H2.64998H2.34998ZM5.09998 5.99998C5.09998 5.50292 5.50292 5.09998 5.99998 5.09998H6.99998C7.49703 5.09998 7.89998 5.50292 7.89998 5.99998V6.99998C7.89998 7.03591 7.89787 7.07134 7.89378 7.10618C7.92861 7.10208 7.96405 7.09998 7.99998 7.09998H8.99998C9.49703 7.09998 9.89998 7.50292 9.89998 7.99998V8.99998C9.89998 9.49703 9.49703 9.89998 8.99998 9.89998H7.99998C7.50292 9.89998 7.09998 9.49703 7.09998 8.99998V7.99998C7.09998 7.96405 7.10208 7.92861 7.10618 7.89378C7.07134 7.89787 7.03591 7.89998 6.99998 7.89998H5.99998C5.50292 7.89998 5.09998 7.49703 5.09998 6.99998V5.99998ZM6.09998 5.99998H5.99998V6.09998V6.89998V6.99998H6.09998H6.89998H6.99998V6.89998V6.09998V5.99998H6.89998H6.09998ZM7.99998 7.99998H8.09998H8.89998H8.99998V8.09998V8.89998V8.99998H8.89998H8.09998H7.99998V8.89998V8.09998V7.99998ZM2.64998 11.75H2.34998H1.74998V12.35V12.65V13.25H2.34998H2.64998H3.24998V12.65V12.35V11.75H2.64998ZM11.75 1.74998H12.35H12.65H13.25V2.34998V2.64998V3.24998H12.65H12.35H11.75V2.64998V2.34998V1.74998ZM12.65 11.75H12.35H11.75V12.35V12.65V13.25H12.35H12.65H13.25V12.65V12.35V11.75H12.65Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></span>
+        <div>
+            <h3 class="font-semibold text-xl">Web Development</h3>
+            <p class="mt-1 text-gray-500"> You can make sure your website or app is highly performant with a built-in
+                system to help you optimize.</p>
+        </div>
+    </div>
+
+
+    <div class="flex gap-4 items-start flex-col ">
+        <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"><path d="M7.28856 0.796908C7.42258 0.734364 7.57742 0.734364 7.71144 0.796908L13.7114 3.59691C13.8875 3.67906 14 3.85574 14 4.05V10.95C14 11.1443 13.8875 11.3209 13.7114 11.4031L7.71144 14.2031C7.57742 14.2656 7.42258 14.2656 7.28856 14.2031L1.28856 11.4031C1.11252 11.3209 1 11.1443 1 10.95V4.05C1 3.85574 1.11252 3.67906 1.28856 3.59691L7.28856 0.796908ZM2 4.80578L7 6.93078V12.9649L2 10.6316V4.80578ZM8 12.9649L13 10.6316V4.80578L8 6.93078V12.9649ZM7.5 6.05672L12.2719 4.02866L7.5 1.80176L2.72809 4.02866L7.5 6.05672Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></span>
+        <div>
+            <h3 class="font-semibold text-xl">Artificial Inteligence </h3>
+            <p class="mt-1 text-gray-500"> Our plugins do not have any external dependencies so our plugin has the
+                minimal footprint possible.</p>
+        </div>
+    </div>
+</div>
+
+<!-- this is client feedback  -->
+<!-- Change mt-10 to mt-24 to create a clear gap -->
+<section class="flex flex-col items-center justify-center p-6 mt-24 md:p-14 w-full bg-blue-700 text-white">
+
+    
+    <div class="flex flex-col items-center">
+        <p class="md:text-3xl text-xl text-center">Their services is great , success, and how we helped them achieve their goals.</p>
+        <div class="flex items-center gap-2 mt-8">
+            <img class="w-12 h-12 md:w-16 md:h-16 rounded-full" src="images/client.jpg">
+            <div class="text-sm">
+                <p class="font-medium text-lg">Muzan Kibutsuji</p>
+                <p>Hidden Leaf CEO</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center gap-2 mt-8">
+        <div class="w-3 h-3 md:w-4 md:h-4 bg-white rounded-full"></div>
+        <div class="w-3 h-3 md:w-4 md:h-4 bg-slate-400 rounded-full"></div>
+        <div class="w-3 h-3 md:w-4 md:h-4 bg-slate-400 rounded-full"></div>
+    </div>
+</section>
+
+<!-- This is Footer  -->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+<footer class="flex flex-col items-center justify-around w-full py-16 text-sm bg-slate-50 text-gray-800/70">
+    <a href="#" class="text-indigo-600">
+        <p class="font-bold leading-snug tracking-tight mx-auto my-6 w-full text-2xl lg:max-w-3xl lg:text-4xl transition-colors duration-200 hover:text-blue-600 cursor-pointer">Portfolio</p>
+    </a>
+    
+    <!-- Minimal live clock section -->
+    <p id="live-clock" class="text-xs tracking-widest text-gray-400 uppercase"></p>
+
+    <p class="mt-4 text-center">Copyright © 2026 <a href="#">My Portfolio</a>. All rights reserved.</p>
+    <div class="flex items-center gap-4 mt-6">
+        <a href="#" class="font-medium text-gray-800 hover:text-black transition-all">
+            Know more
+        </a>
+        <div class="h-4 w-px bg-black/20"></div>
+        <a href="#" class="font-medium text-gray-800 hover:text-black transition-all">
+           Thank You
+        </a>
+    </div>
+</footer>
+
+<!-- Simple JavaScript to run the live clock -->
+<script>
+    function updateClock() {
+        const now = new Date();
+        // Outputs a clean format like: "Aug 8, 2026, 3:13 PM"
+        const options = { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+        document.getElementById('live-clock').innerText = now.toLocaleString('en-US', options);
+    }
+    setInterval(updateClock, 1000);
+    updateClock(); // Run instantly on load
+</script>
+
+
+<script>
+    
+    const menuButtons = document.querySelectorAll('.menu-btn');
+    const mobileMenus = document.querySelectorAll('.mobile-menu');
+
+    menuButtons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            mobileMenus[index].classList.toggle('hidden');
+        });
+    });
+
+    // this is for carosel 
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach(s => s.classList.remove('active'));
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+</script>
+
+</body>
+</html>
